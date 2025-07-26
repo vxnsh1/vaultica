@@ -120,3 +120,37 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Animate Gradient Keyframes */
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Gradient animation class */
+.animate-gradient {
+  animation: gradient 8s linear infinite;
+  background-size: 300% 100%;
+}
+
+
+.hero-image-wrapper{
+  perspective: 1000px;
+}
+
+.hero-image{
+  transform: rotateX(15deg) scale(1);
+  transition: transform 0.5s ease-out;
+  will-change: transform;
+}
+
+.hero-image.scrolled{
+  transform: rotateX(0deg) scale(1) translateY(40px); 
+}

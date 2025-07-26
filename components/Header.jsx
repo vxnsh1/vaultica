@@ -40,7 +40,7 @@ const Header = () => {
           </SignedIn>
           <SignedOut>
             <SignInButton forceRedirectUrl="/dashboard">
-              <Button variant="outline">Login</Button>
+              <Button variant="outline" className="cursor-pointer">Login</Button>
             </SignInButton>
           </SignedOut>
           <SignedIn>

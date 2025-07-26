@@ -20,9 +20,9 @@ export default function RootLayout({ children }) {
           <main className="min-h-screen">{children}</main>
           <footer className="bg-gray-50 py-4">
             <div className="container flex space-x-4 justify-center mx-auto px-4 text-center">
-              <a href={"https://www.instagram.com/ugh.vansh"} target="_blank"><Instagram className="cursor-pointer"/></a>
-              <a href={"https://x.com/itzvxnsh"} target="_blank"><Twitter className="cursor-pointer"/></a>
-              <a href={"https://www.linkedin.com/in/vanshchouhan/"} target="_blank"><Linkedin className="cursor-pointer"/></a>
+              <a href={"https://www.instagram.com"} target="_blank"><Instagram className="cursor-pointer"/></a>
+              <a href={"https://x.com"} target="_blank"><Twitter className="cursor-pointer"/></a>
+              <a href={"https://www.linkedin.com"} target="_blank"><Linkedin className="cursor-pointer"/></a>
             </div>
           </footer>
         </body>
