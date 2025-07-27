@@ -9,8 +9,10 @@ import Link from "next/link";
 import Image from "next/image";
 import { Button } from "./ui/button";
 import { TvMinimal, BanknoteArrowUp } from "lucide-react";
+import { checkUser } from "../lib/checkuser.js";  
 
-const Header = () => {
+const Header = async () => {
+  await checkUser();
   return (
     <div className="flex top-0 w-full h-16 bg-white backdrop-blur-md z-50 border-b">
       <nav className="container mx-auto p-4 flex items-center justify-between">
